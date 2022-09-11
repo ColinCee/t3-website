@@ -6,35 +6,36 @@ import Typewriter from "typewriter-effect";
 
 const Home: NextPage = () => {
   return (
-    <main className="flex flex-auto flex-col gap-20 justify-center items-center bg-gray-900">
+    <main className="flex flex-auto flex-col gap-20 justify-center items-center bg-gray-900 p-4">
       <h1 className="text-3xl break-words">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
               .typeString("Hello, My name is Colin!")
-              .pauseFor(1000)
+              .pauseFor(1500)
               .typeString("<br/>")
               .typeString("I'm a full-stack developer.")
-              .pauseFor(1000)
+              .pauseFor(1500)
               .deleteChars(21)
               .typeString("machine learning enthusiast.")
-              .pauseFor(1000)
+              .pauseFor(1500)
               .deleteChars(28)
-              .typeString("backseat gamer.")
-              .pauseFor(10000)
+              .typeString("casual gamer.")
+              .pauseFor(8000)
               .start();
           }}
           options={{
             autoStart: true,
             loop: true,
-            delay: 100,
+            delay: 80,
+            deleteSpeed: 50,
           }}
         />
       </h1>
       <aside className="text-center">
-        <h3>Built using </h3>
+        <h3 className="my-4">Built using </h3>
 
-        <section className="flex gap-10">
+        <section className="flex justify-center flex-wrap gap-8">
           <a href="https://nextjs.org/">
             <NextJsLogo alt="Next.js Logo" width={100} height={100} />
           </a>
