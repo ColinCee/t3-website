@@ -1,8 +1,8 @@
-import type { NextPage } from 'next';
-import { trpc } from '../utils/trpc';
+import type { NextPage } from "next";
+import { trpc } from "../utils/trpc";
 
 const Stack: NextPage = () => {
-  const hello = trpc.useQuery(['example.hello', { text: 'from tRPC' }]);
+  const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
 
   return (
     <>
