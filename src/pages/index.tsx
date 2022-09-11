@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import NextJsLogo from "../../public/images/nextjs.svg";
 import TailwindLogo from "../../public/images/tailwind.svg";
 import PrismaLogo from "../../public/images/prisma.svg";
