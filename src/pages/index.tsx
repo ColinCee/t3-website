@@ -1,4 +1,8 @@
 import type { NextPage } from "next";
+import Image from "next/image";
+import NextJsLogo from "../../public/images/nextjs.svg";
+import TailwindLogo from "../../public/images/tailwind.svg";
+import PrismaLogo from "../../public/images/prisma.svg";
 import Typewriter from "typewriter-effect";
 
 const Home: NextPage = () => {
@@ -28,17 +32,23 @@ const Home: NextPage = () => {
           }}
         />
       </h1>
-      <section className="text-center">
+      <aside className="text-center">
         <h3>Built using </h3>
-        <ul>
-          <li>
-            <a href="https://nextjs.org/">Next.js</a>
-          </li>
-          <li>
-            <a href="https://tailwindcss.com/">Tailwind CSS</a>
-          </li>
-        </ul>
-      </section>
+
+        <section className="flex gap-10">
+          <a href="https://nextjs.org/">
+            <NextJsLogo alt="Next.js Logo" width={100} height={100} />
+          </a>
+
+          <a href="https://tailwindcss.com/">
+            <TailwindLogo alt="Tailwind CSS Logo" width={100} height={100} />
+          </a>
+
+          <a href="https://www.prisma.io/">
+            <PrismaLogo alt="Prisma Logo" width={100} height={100} />
+          </a>
+        </section>
+      </aside>
     </main>
   );
 };

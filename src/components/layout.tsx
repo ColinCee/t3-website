@@ -5,7 +5,7 @@ type Props = {
 };
 export default function Layout({ children }: Props) {
   return (
-    <div id="layout-root" className="flex flex-col text-gray-200">
+    <div id="layout-root" className="flex flex-col">
       <Navbar />
       {children}
     </div>
