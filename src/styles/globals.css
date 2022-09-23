@@ -13,3 +13,32 @@ body,
 html {
   @apply text-gray-200;
 }
+
+@layer components {
+  .eye {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .eyeball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+  .eyeball_shine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1.5px;
+    width: 1.5px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+}

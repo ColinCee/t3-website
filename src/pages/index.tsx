@@ -3,6 +3,7 @@ import NextJsLogo from "../../public/images/nextjs.svg";
 import TailwindLogo from "../../public/images/tailwind.svg";
 import PrismaLogo from "../../public/images/prisma.svg";
 import Typewriter from "typewriter-effect";
+import Eyeball from "../components/eyeball";
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +33,7 @@ const Home: NextPage = () => {
           }}
         />
       </h1>
-      <aside className="text-center">
+      <aside className="text-center bg-gray-700 p-12 rounded-lg relative">
         <h3 className="my-4">Built using </h3>
 
         <section className="flex justify-center flex-wrap gap-8">
@@ -48,6 +49,7 @@ const Home: NextPage = () => {
             <PrismaLogo alt="Prisma Logo" width={100} height={100} />
           </a>
         </section>
+        <Eyeball />
       </aside>
     </main>
   );
